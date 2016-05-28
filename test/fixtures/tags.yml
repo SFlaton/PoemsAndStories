@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  poem_id: 
+  short_story_id: 
+
+two:
+  title: MyString
+  poem_id: 
+  short_story_id: 
