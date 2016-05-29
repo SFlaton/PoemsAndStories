@@ -3,9 +3,7 @@
 
 <h2>Biography:</h2>
 <p><%= @author.biography %></p>
-<div class="buttons">
-  <%= button_to "Edit Author", edit_author_path, :class => "button", :method => :get %>
-</div>
+
 <div class="buttons">
   <%= button_to "Add Poem", new_author_poem_path( author_id: @author.id), :class => "button", :method => :get %>
 </div>
