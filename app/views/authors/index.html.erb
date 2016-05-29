@@ -1,7 +1,7 @@
 <h1>Authors</h1>
 
 <% @authors.each do |author| %>
-    <p><%= link_to author.name, author%></p>
+    <h3><%= link_to author.name, author%></h3>
 <% end %>
 
-<%=link_to "Add Author", new_author_path %>
+<%=button_to "Add Author", new_author_path, :class => "button", :method => :get  %>

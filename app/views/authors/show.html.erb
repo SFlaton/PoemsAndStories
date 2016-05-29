@@ -1,7 +1,7 @@
 <h2><%= @author.name %></h2>
-<h2>Biography:</h2>
-<p><strong>tags:</strong><%= render "tag" %></p>
+<h4><strong>tags:</strong><%= render "tag" %></h4>
 
+<h2>Biography:</h2>
 <p><%= @author.biography %></p>
 <div class="buttons">
   <%= button_to "Add Poem", new_author_poem_path( author_id: @author.id), :class => "button", :method => :get %>

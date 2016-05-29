@@ -22,10 +22,17 @@
 <%] %>
 
 <% tags.each do |title| %>
+
     <% if @poem.content.downcase.include? title.downcase %>
+      <div class="tag">
         <%="#{title}"%>
+      </div>
     <% end %>
+
     <% if @poem.methaphor.downcase.include? title.downcase %>
+      <div class="tag">
         <%="#{title}"%>
+      </div>
     <% end %>
+
 <% end %>
