@@ -1,10 +1,15 @@
 <h2><%= @author.name %></h2>
 <h2>Biography:</h2>
-<h3><%= @author.biography %></h3>
+<p><strong>tags:</strong><%= render "tag" %></p>
+
+<p><%= @author.biography %></p>
+<%= link_to "Add Poem", new_author_poem_path( author_id: @author.id ) %>
+<%= link_to "Add Short Story", new_author_short_story_path( author_id: @author.id ) %>
+<%= link_to "back", authors_path %>
 <br>
 <br>
-<h2>List of poems:</h2>
 <% poems = @author.poems.sort_by {|poem| poem.publish_date } %>
 <%= render poems %>
 
-<%= link_to "New Poem", new_author_poem_path( author_id: @author.id ) %>
+<% short_stories = @author.short_stories.sort_by {|short_story| short_story.publish_date } %>
+<%= render short_stories %>
