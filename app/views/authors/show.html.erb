@@ -3,9 +3,16 @@
 <p><strong>tags:</strong><%= render "tag" %></p>
 
 <p><%= @author.biography %></p>
-<%= link_to "Add Poem", new_author_poem_path( author_id: @author.id ) %>
-<%= link_to "Add Short Story", new_author_short_story_path( author_id: @author.id ) %>
-<%= link_to "back", authors_path %>
+<div class="buttons">
+  <%= button_to "Add Poem", new_author_poem_path( author_id: @author.id), :class => "button", :method => :get %>
+</div>
+<div class="buttons">
+  <%= button_to "Add Short Story", new_author_short_story_path( author_id: @author.id), :class => "button", :method => :get %>
+</div>
+<div class="buttons">
+  <%= button_to "Back", authors_path, :class => "button", :method => :get %>
+</div>
+
 <br>
 <br>
 <% poems = @author.poems.sort_by {|poem| poem.publish_date } %>
