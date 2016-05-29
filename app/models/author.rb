@@ -1,3 +1,3 @@
 class Author < ActiveRecord::Base
-  has_many :poems, :short_stories
+  has_many :poems
 end
