@@ -1,0 +1,31 @@
+<% tags = [ %>
+  <%"bird", %>
+  <%"boy", %>
+  <%"girl", %>
+  <%"hope", %>
+  <%"child", %>
+  <%"love", %>
+  <%"mother", %>
+  <%"friend", %>
+  <%"writer", %>
+  <%"poet", %>
+  <%"childhood", %>
+  <%"factory", %>
+  <%"sea", %>
+  <%"fun", %>
+  <%"ocean", %>
+  <%"regret", %>
+  <%"loss", %>
+  <%"sad", %>
+  <%"family", %>
+  <%"faith" %>
+<%] %>
+
+<% tags.each do |title| %>
+    <% if @poem.content.downcase.include? title.downcase %>
+        <%="#{title}"%>
+    <% end %>
+    <% if @poem.methaphor.downcase.include? title.downcase %>
+        <%="#{title}"%>
+    <% end %>
+<% end %>

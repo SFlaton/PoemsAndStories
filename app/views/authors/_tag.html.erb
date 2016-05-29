@@ -1,0 +1,28 @@
+<% tags = [ %>
+  <%"bird", %>
+  <%"boy", %>
+  <%"girl", %>
+  <%"hope", %>
+  <%"child", %>
+  <%"love", %>
+  <%"mother", %>
+  <%"friend", %>
+  <%"writer", %>
+  <%"poet", %>
+  <%"childhood", %>
+  <%"factory", %>
+  <%"sea", %>
+  <%"fun", %>
+  <%"ocean", %>
+  <%"regret", %>
+  <%"loss", %>
+  <%"sad", %>
+  <%"family", %>
+  <%"faith" %>
+<%] %>
+
+<% tags.each do |title| %>
+    <% if @author.biography.include? title %>
+        <%="#{title}"%>
+    <% end %>
+<% end %>

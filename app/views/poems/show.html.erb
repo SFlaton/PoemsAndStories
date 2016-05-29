@@ -2,10 +2,16 @@
 <h2>Title: <%= @poem.title %></h2>
 <h3>publish date: <%= @poem.publish_date %></h3>
 <p>
+  <strong>tags:</strong>
+  <%= render "tag" %>
+</p>
+<p>
   <%= @poem.content %>
 </p>
 
 <p>
-  methapor:
+  <strong>methapor:</strong>
   <%= @poem.methaphor %>
 </p>
+
+<%=link_to "Back", authors_path %>
