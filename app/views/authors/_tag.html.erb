@@ -23,6 +23,8 @@
 
 <% tags.each do |title| %>
     <% if @author.biography.include? title %>
+      <div class="tag">
         <%="#{title}"%>
+      </div>
     <% end %>
 <% end %>

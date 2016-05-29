@@ -1,1 +1,1 @@
-<h3>short story: <%= short_story.author.name%><%= " - "%><%= link_to short_story.title, author_short_story_path(@author, short_story)%><%= " - "%><%=short_story.publish_date%></h3>
+<h3>short story: <%= link_to short_story.title, author_short_story_path(@author, short_story)%><%= " - "%><%=short_story.publish_date%></h3>
