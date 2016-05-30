@@ -1,5 +1,6 @@
 == README
 
-This application runs on localhost:3000 with <tt>rails server</tt>.
-
 This is a small application where poems and short stories can be stored by author.
+
+This application runs on localhost:3000 with <tt>rails server</tt>.
+First run <tt>rake db:create</tt>, <tt>rake db:migrate</tt> and <tt>rake db:seed</tt> for setting the local database.
